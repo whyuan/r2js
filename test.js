@@ -16,3 +16,4 @@ assert(`
 		(let ([f (lambda (y) (* x y))])
 			(let ([x 4])
 				(f 3))))`, 6);
+assert("((lambda (x) (+ (let ([x 3]) x) x)) 2)", 5);
